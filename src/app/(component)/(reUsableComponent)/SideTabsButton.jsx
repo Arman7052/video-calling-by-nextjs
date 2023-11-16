@@ -1,17 +1,18 @@
 import Image from "next/image";
 const SideTabsButton = ({ imageUrl }) => {
+  const checkButton = () => {
+    console.log("Ok");
+  };
   return (
     <div>
-      {" "}
-      <button className="p-2 ">
-        <Image
-          width={25}
-          height={25}
-          src={imageUrl}
-          alt="Button image"
-          className=" rounded-full"
-        ></Image>
-      </button>
+      <Image
+        onClick={checkButton}
+        width={25}
+        height={25}
+        src={imageUrl}
+        alt="Button image"
+        className=" rounded-full"
+      />
     </div>
   );
 };
