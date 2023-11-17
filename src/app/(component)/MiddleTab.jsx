@@ -1,11 +1,23 @@
+import UserInfo from "./(reUsableComponent)/UserInfo";
+import VideoCall from "./(tabComponents)/(middleTab)/(videoCall)/VideoCall";
+
 const MiddleTab = () => {
   return (
     <div>
-      <div>
-        <div className="grid grid-rows-5 gap-2 h-screen">
-          <div className="grid row-span-1 rounded-md bg-orange-400">T</div>
-          <div className="grid row-span-4 rounded-md bg-violet-600 mb-16">
-            m
+      <div className="text-start">
+        <div className="grid grid-rows-5 gap-5 h-screen p-2">
+          <div className="grid row-span-1 rounded-md bg-orange-400 p-2">
+            <UserInfo
+              imageSrc="/UserImg.png"
+              altText="User Profile"
+              name="John Doe"
+              serial={12545642}
+              age={25}
+              gender={"Male"}
+            />
+          </div>
+          <div className="grid row-span-4 bg-blue-400 rounded-md  mb-16 p-2">
+            <VideoCall />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import LabReport from "../LabReport";
-import PrevAppointTime from "../(reUsableComponent)/PrevAppointTime";
+import LabReport from "../../LabReport";
+import PrevAppointTime from "../../(reUsableComponent)/PrevAppointTime";
 
 const PreviousConsultation = () => {
   return (
@@ -13,27 +13,26 @@ const PreviousConsultation = () => {
             time="5:00 PM"
             iconSrc="./icon/direction-right.svg"
             altText=""
-          ></PrevAppointTime>
+          />
 
           <PrevAppointTime
             date="2023-11-10"
             time="11:00 AM"
             iconSrc="./icon/direction-right.svg"
             altText=""
-          ></PrevAppointTime>
+          />
 
           <PrevAppointTime
             date="2023-11-10"
             time="2:00 PM"
             iconSrc="./icon/direction-right.svg"
             altText=""
-          ></PrevAppointTime>
+          />
         </div>
 
         <div className=" row-span-3 rounded-md">
-          <h1> Lab Records </h1>
-          <hr />
-          <LabReport></LabReport>
+          Lab Records <hr />
+          <LabReport />
         </div>
       </div>
     </div>

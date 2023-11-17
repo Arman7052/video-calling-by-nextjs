@@ -1,7 +1,7 @@
 import { useState } from "react";
-import PreviousConsultation from "./(tabComponents)/PreviousConsultation";
-import HealthLogs from "./(tabComponents)/HealthLogs";
-import HealthVaults from "./(tabComponents)/HealthVaults";
+import PreviousConsultation from "./(tabComponents)/(leftTab)/PreviousConsultation";
+import HealthLogs from "./(tabComponents)/(leftTab)/HealthLogs";
+import HealthVaults from "./(tabComponents)/(leftTab)/HealthVaults";
 import SideTabsButton from "./(reUsableComponent)/SideTabsButton";
 
 const LeftTab = () => {
@@ -32,10 +32,10 @@ const LeftTab = () => {
             {/* Render content based on the active tab */}
             {renderContent()}
           </div>
-          <div className="grid row-span-1">
+          <div className="grid row-span-1 ">
             <div className="flex flex-row justify-evenly bg-gray-200 mb-16 rounded-md">
               <button onClick={() => handleTabChange(0)}>
-                <SideTabsButton imageUrl="/Previousconsultation.png"></SideTabsButton>
+                <SideTabsButton imageUrl="/Previousconsultation.png" />
               </button>
               <button onClick={() => handleTabChange(1)}>
                 <SideTabsButton imageUrl="/HealthLogs.png" />
