@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import SideTabsButton from "./(reUsableComponent)/SideTabsButton";
+import AdvicePage from "./(tabComponents)/Advice";
+import Advice from "./(tabComponents)/Advice";
+import Diagnosis from "./(tabComponents)/Diagnosis";
+import MedicalRecord from "./(tabComponents)/MedicalRecord";
+import NextVisit from "./(tabComponents)/NextVisit";
+import ConsultationInfo from "./(tabComponents)/ConsultationInfo";
+import Symptoms from "./(tabComponents)/Symptoms";
+import Medication from "./(tabComponents)/Medication";
 
 const RightTab = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -8,51 +16,59 @@ const RightTab = () => {
     setActiveTab(tabIndex);
   };
 
+  const renderContent = () => {
+    switch (activeTab) {
+      case 0:
+        return <ConsultationInfo></ConsultationInfo>;
+      case 1:
+        return <Symptoms></Symptoms>;
+      case 2:
+        return <Diagnosis></Diagnosis>;
+      case 3:
+        return <MedicalRecord></MedicalRecord>;
+      case 4:
+        return <Medication></Medication>;
+      case 5:
+        return <Advice></Advice>;
+      case 6:
+        return <NextVisit></NextVisit>;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div>
       <div>
-        <div className="grid grid-rows-6 gap-2 h-screen">
-          <div className="grid row-span-5  rounded-md">
+        <div className="grid grid-rows-6 gap-2 h-screen text-start">
+          <div className="grid row-span-5 rounded-md">
             {/* Render content based on the active tab */}
-            <div className=" font-bold text-start">{items[activeTab].name}</div>
-            {items[activeTab].content.map((item, index) => (
-              <div key={index}>
-                {/* Adjust the rendering based on the structure of your content */}
-
-                <p className=" ">Date: {item.date}</p>
-                <p>Time: {item.time}</p>
-                <p>Doctor: {item.doctor}</p>
-                <p>Summary: {item.summary}</p>
-              </div>
-            ))}
+            {renderContent()}
           </div>
+
           <div className="grid row-span-1">
             <div className="flex flex-row justify-evenly bg-gray-200 mb-16 rounded-md">
-              <div className="flex flex-row justify-evenly   ">
-                {/* Map through tabs to render SideTabsButtons within buttons */}
-                {items.map((tab, tabIndex) => (
-                  <button
-                    key={tabIndex}
-                    onClick={() => handleTabChange(tabIndex)}
-                  >
-                    <SideTabsButton imageUrl={`/${tab.title}.png`} />
-                  </button>
-                ))}
-              </div>
-              <div className=" flex flex-row justify-evenly">
-                <button>
-                  <SideTabsButton imageUrl="/Advice.png" />
-                </button>
-                <button>
-                  <SideTabsButton imageUrl="/Diagnosis.png" />
-                </button>
-                <button>
-                  <SideTabsButton imageUrl="/MedicalRecord.png" />
-                </button>
-                <button>
-                  <SideTabsButton imageUrl="/NextVisit.jpg" />
-                </button>
-              </div>
+              <button onClick={() => handleTabChange(0)}>
+                <SideTabsButton imageUrl="/ConsultationInfo.png" />
+              </button>
+              <button onClick={() => handleTabChange(1)}>
+                <SideTabsButton imageUrl="/Symptoms.png" />
+              </button>
+              <button onClick={() => handleTabChange(2)}>
+                <SideTabsButton imageUrl="/Diagnosis.png" />
+              </button>
+              <button onClick={() => handleTabChange(3)}>
+                <SideTabsButton imageUrl="/MedicalRecord.png" />
+              </button>
+              <button onClick={() => handleTabChange(4)}>
+                <SideTabsButton imageUrl="/Medication.png" />
+              </button>
+              <button onClick={() => handleTabChange(5)}>
+                <SideTabsButton imageUrl="/Advice.png"></SideTabsButton>
+              </button>
+              <button onClick={() => handleTabChange(6)}>
+                <SideTabsButton imageUrl="/NextVisit.jpg" />
+              </button>
             </div>
           </div>
         </div>
@@ -62,41 +78,3 @@ const RightTab = () => {
 };
 
 export default RightTab;
-
-const items = [
-  {
-    title: "ConsultationInfo",
-    content: [
-      {
-        date: "2023-11-16",
-        time: "11:30 AM",
-        doctor: "Dr. Sarah Johnson",
-        summary:
-          "Follow-up consultation for ongoing back pain. Physical examination and review of symptoms conducted. Adjusted medication dosage and recommended physiotherapy.",
-      },
-    ],
-    name: "Consultation Info",
-  },
-  {
-    title: "Symptoms",
-    content: ["Persistent cough", "Fever", "Back pain", "Headache"],
-    name: "Symptoms",
-  },
-
-  {
-    title: "Medication",
-    name: "Medications",
-    content: [
-      {
-        name: "Ibuprofen",
-        dosage: "200mg",
-        frequency: "Twice daily",
-      },
-      {
-        name: "Medication",
-        dosage: "10mg",
-        frequency: "Once daily",
-      },
-    ],
-  },
-];
