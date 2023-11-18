@@ -15,7 +15,7 @@ const ProblemInput = () => {
           value={chiefComplaints}
           onChange={(e) => setChiefComplaints(e.target.value)}
           placeholder="chief complaints"
-          className=" border border-gray-300 md:p-2 rounded-md"
+          className=" border border-gray-300 p-2 rounded-md"
         />
       </div>
       <div className="md:pt-2">
@@ -25,7 +25,7 @@ const ProblemInput = () => {
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
           placeholder="Enter weight"
-          className="border border-gray-300 md:p-2 rounded-md"
+          className="border border-gray-300 p-2 rounded-md"
         />
       </div>
       <div className="md:pt-2">
@@ -35,7 +35,7 @@ const ProblemInput = () => {
           value={labOrders}
           onChange={(e) => setLabOrders(e.target.value)}
           placeholder="Enter lab orders"
-          className="border border-gray-300 md:p-2 rounded-md"
+          className="border border-gray-300 p-2 rounded-md"
         />
       </div>
       <div className="md:pt-2">
@@ -45,7 +45,7 @@ const ProblemInput = () => {
           value={advise}
           onChange={(e) => setAdvise(e.target.value)}
           placeholder="Enter advise"
-          className="border mx-auto border-gray-300 md:p-2 rounded-md"
+          className="border mx-auto border-gray-300 p-2 rounded-md"
         />
       </div>
     </div>
