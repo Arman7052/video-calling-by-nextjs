@@ -25,9 +25,9 @@ const VideoCall = () => {
             <p className="p-2 text-xs">13:15:00</p>
           </div>
         </div>
-        <div>
+        <div className="h-16 w-16 md:h-28 md:w-28">
           <Image
-            className="rounded-sm "
+            className=" rounded-sm "
             width={150}
             height={150}
             src="/DoctorImg.png"
