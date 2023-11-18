@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import Modal from "../../Modal";
 import ModalCompo from "../../ModalCompo";
+import Diagnosis2Input from "../../(reUsableComponent)/Diagnosis2Input";
 
 const Diagnosis2 = ({ onPrev, onNext }) => {
   const [showModal, setShowModal] = useState(false);
@@ -10,15 +11,14 @@ const Diagnosis2 = ({ onPrev, onNext }) => {
         <h2 className="border border-gray-200 px-2 rounded-md">
           Select Diagnosis
         </h2>
-        <form>
-          <h1 className="">Note :</h1>
-          <input
-            name="field2"
-            placeholder="Write Here"
-            className=" border border-gray-200 px-2 rounded-md"
-          ></input>
-        </form>
-
+        <Diagnosis2Input
+          title={"Weight"}
+          description={"Regular Practice &  early sleep , early bed"}
+        />
+        <Diagnosis2Input
+          title={"Pressure Low"}
+          description={"Regular Practice &  early sleep , early bed"}
+        />
         <div className=" py-4">
           <button
             onClick={() => setShowModal(true)}
