@@ -12,7 +12,7 @@ const VideoCall = () => {
     >
       <div className="flex flex-row justify-between mx-4 py-4 row-span-5 ">
         <div className="bg-white max-h-7 flex flex-row rounded-sm">
-          <div>
+          <div className=" sm:h-5 sm:w-5 ">
             <Image
               className=" p-1"
               width={30}
@@ -36,7 +36,7 @@ const VideoCall = () => {
         </div>
       </div>
       <div className=" row-span-1 mb-0 text-center">
-        <div className="bg-white mx-44 p-4 rounded-full flex flex-row justify-between">
+        <div className="bg-white mx-2 lg:mx-44 p-4 rounded-full flex flex-row justify-between">
           <button className=" rounded-full ">
             <Image
               height={30}
