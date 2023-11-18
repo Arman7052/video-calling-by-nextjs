@@ -1,5 +1,5 @@
 import React from "react";
-import PaginationDiagnosis from "../../(prescription)/(diagnisisPagination)/PaginationDiagnosis";
+import PaginationDiagnosis from "../../(pagination)/PaginationDiagnosis";
 
 const Diagnosis = () => {
   return (

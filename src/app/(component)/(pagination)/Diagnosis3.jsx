@@ -1,5 +1,5 @@
 import React from "react";
-import Diagnosis3Input from "../../(reUsableComponent)/Diagnosis3Input";
+import Diagnosis3Input from "../(reUsableComponent)/Diagnosis3Input";
 
 const Diagnosis3 = ({ onPrev, onSubmit }) => {
   return (

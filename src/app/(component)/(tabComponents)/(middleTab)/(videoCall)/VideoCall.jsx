@@ -10,7 +10,7 @@ const VideoCall = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-row justify-between mx-4 py-4 row-span-5 ">
+      <div className="flex flex-row justify-between mx-1 py-1 md:mx-4 md:py-4 row-span-5 ">
         <div className="bg-white max-h-7 flex flex-row rounded-sm">
           <div className=" sm:h-5 sm:w-5 ">
             <Image
@@ -18,7 +18,7 @@ const VideoCall = () => {
               width={30}
               height={10}
               src="/LiveIcon.png"
-              alt="Doctor"
+              alt="LiveIcon"
             />
           </div>
           <div>
@@ -62,7 +62,7 @@ const VideoCall = () => {
               alt="UpArrowCircle.png"
             />
           </button>
-          <button className=" bg-red-500 rounded-full py-3 px-4 text-xs text-white">
+          <button className=" bg-red-500 rounded-full py-1 md:py-3 px-4 text-xs text-white">
             End Call
           </button>
         </div>
