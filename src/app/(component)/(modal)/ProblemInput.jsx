@@ -7,45 +7,45 @@ const ProblemInput = () => {
   const [advise, setAdvise] = useState("");
 
   return (
-    <div className="pt-5">
-      <div className="pt-2">
+    <div className=" md:pt-5">
+      <div className="md:pt-2">
         <h1 className="font-bold">Chief Complaints :</h1>
         <input
           type="text"
           value={chiefComplaints}
           onChange={(e) => setChiefComplaints(e.target.value)}
-          placeholder="Enter chief complaints"
-          className="border border-gray-300 p-2 rounded-md"
+          placeholder="chief complaints"
+          className=" border border-gray-300 md:p-2 rounded-md"
         />
       </div>
-      <div className="pt-2">
+      <div className="md:pt-2">
         <h1 className="font-bold">Weight (kg) :</h1>
         <input
           type="text"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
           placeholder="Enter weight"
-          className="border border-gray-300 p-2 rounded-md"
+          className="border border-gray-300 md:p-2 rounded-md"
         />
       </div>
-      <div className="pt-2">
+      <div className="md:pt-2">
         <h1 className="font-bold">Lab Orders :</h1>
         <input
           type="text"
           value={labOrders}
           onChange={(e) => setLabOrders(e.target.value)}
           placeholder="Enter lab orders"
-          className="border border-gray-300 p-2 rounded-md"
+          className="border border-gray-300 md:p-2 rounded-md"
         />
       </div>
-      <div className="pt-2">
+      <div className="md:pt-2">
         <h1 className="font-bold">Advise :</h1>
         <input
           type="text"
           value={advise}
           onChange={(e) => setAdvise(e.target.value)}
           placeholder="Enter advise"
-          className="border border-gray-300 p-2 rounded-md"
+          className="border mx-auto border-gray-300 md:p-2 rounded-md"
         />
       </div>
     </div>
