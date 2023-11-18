@@ -4,7 +4,7 @@ import React from "react";
 const PatentBio = () => {
   return (
     <div className="p-2 pt-5">
-      <div className="flex flex-row justify-between gap-2">
+      <div className="flex flex-col md:flex-row justify-between gap-2">
         <div className="flex flex-row justify-between">
           <div>
             <p>Patient Name :</p> <hr />
@@ -24,7 +24,7 @@ const PatentBio = () => {
             <p className="font-bold text-black">PHC Admin</p>
           </div>
         </div>
-        <div className="flex flex-row justify-between gap-2">
+        <div className="flex  md:flex-row justify-between gap-2">
           <div>
             <p>Arrival Time:</p>
             <hr />

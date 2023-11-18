@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import PatentBio from "./(prescription)/PatentBio";
-import DiagnosisMedic from "./(prescription)/DiagnosisMedic";
+
 import ProblemInput from "./(modal)/ProblemInput";
 import DiagnoseMedicInput from "./(modal)/DiagnoseMedicInput";
 
 const ModalCompo = () => {
   return (
     <div>
-      <div className="p-10">
+      <div className=" p-10">
         <div>
           <Image
             width={200}
@@ -19,9 +19,11 @@ const ModalCompo = () => {
           />
           <hr />
         </div>
-        <PatentBio />
+        <div className="hidden md:block">
+          <PatentBio />
+        </div>
         <hr />
-        <div className="flex flex-row justify-around">
+        <div className="flex flex-col md:flex-row justify-between gap-2">
           <div className="text-left">
             <ProblemInput />
           </div>
