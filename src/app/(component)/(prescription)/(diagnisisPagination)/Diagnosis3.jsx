@@ -1,24 +1,19 @@
 import React from "react";
+import Diagnosis3Input from "../../(reUsableComponent)/Diagnosis3Input";
 
 const Diagnosis3 = ({ onPrev, onSubmit }) => {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6">Diagnosis</h2>
-      <form className="mb-6">
-        <label className="block text-gray-700 mb-2">
-          Use:
-          <input
-            type="text"
-            name="field3"
-            className="border border-gray-400 px-4 py-2 w-full rounded-md focus:outline-none focus:border-blue-500"
-          />
-        </label>
-      </form>
+    <div className="bg-white rounded-lg">
+      <Diagnosis3Input title={"Covid-19"} />
+      <Diagnosis3Input title={"Dengue"} />
+      <Diagnosis3Input title={"Ent"} />
+      <Diagnosis3Input title={"Ent"} />
+      <Diagnosis3Input title={"Ent"} />
 
-      <div className="text-center">
+      <div className="text-center py-2">
         <button
           onClick={onSubmit}
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none"
+          className="bg-blue-500 text-white px-4 rounded-md hover:bg-blue-700 focus:outline-none"
         >
           Submit
         </button>
