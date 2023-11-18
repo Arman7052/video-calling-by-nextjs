@@ -6,7 +6,7 @@ const MiddleTab = () => {
     <div>
       <div className="text-start">
         <div className="grid grid-rows-5 gap-5 h-screen p-2">
-          <div className="grid row-span-1 rounded-md bg-orange-400 p-2">
+          <div className="grid row-span-1 rounded-md bg-orange-400 py-2">
             <UserInfo
               imageSrc="/UserImg.png"
               altText="User Profile"

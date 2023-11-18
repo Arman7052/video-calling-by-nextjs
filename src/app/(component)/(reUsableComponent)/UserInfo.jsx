@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const UserInfo = ({ imageSrc, altText, name, age, gender, serial }) => {
   return (
-    <div className="flex items-center gap-2 ml-4 text-white  text-xs md:text-base">
+    <div className="flex justify-evenly items-center gap-2  text-white  text-xs md:text-base">
       <div className="rounded-full overflow-hidden">
         <Image
           width={50}
