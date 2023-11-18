@@ -4,7 +4,7 @@ import PrevAppointTime from "../../(reUsableComponent)/PrevAppointTime";
 
 const PreviousConsultation = () => {
   return (
-    <div className="hidden md:block">
+    <div className="">
       <h1 className="font-bold py-5">Previous Consultation</h1>
       <div className="grid grid-rows-5 gap-2">
         <div className=" rounded-md row-span-2">

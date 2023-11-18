@@ -3,6 +3,7 @@ import PreviousConsultation from "./(tabComponents)/(leftTab)/PreviousConsultati
 import HealthLogs from "./(tabComponents)/(leftTab)/HealthLogs";
 import HealthVaults from "./(tabComponents)/(leftTab)/HealthVaults";
 import SideTabsButton from "./(reUsableComponent)/SideTabsButton";
+import RightTab from "./RightTab";
 
 const LeftTab = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -32,8 +33,9 @@ const LeftTab = () => {
             {/* Render content based on the active tab */}
             {renderContent()}
           </div>
+
           <div className="grid row-span-1 ">
-            <div className="flex flex-row justify-evenly bg-gray-200 mb-16 rounded-md">
+            <div className=" flex flex-row justify-evenly bg-gray-200 mb-16 rounded-md">
               <button onClick={() => handleTabChange(0)}>
                 <SideTabsButton imageUrl="/Previousconsultation.png" />
               </button>
