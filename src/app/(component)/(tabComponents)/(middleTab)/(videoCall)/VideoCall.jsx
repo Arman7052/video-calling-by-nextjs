@@ -12,7 +12,7 @@ const VideoCall = () => {
     >
       <div className="flex flex-row justify-between mx-1 py-1 md:mx-4 md:py-4 row-span-5 ">
         <div className="bg-white max-h-7 flex flex-row rounded-sm">
-          <div className=" sm:h-5 sm:w-5 ">
+          <div className=" h-5 w-5 ">
             <Image
               className=" p-1"
               width={30}
