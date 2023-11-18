@@ -7,8 +7,8 @@ const SideTabsButton = ({ imageUrl }) => {
     <div>
       <Image
         onClick={checkButton}
-        width={25}
-        height={25}
+        width={40}
+        height={40}
         src={imageUrl}
         alt="Button image"
         className=" rounded-full"

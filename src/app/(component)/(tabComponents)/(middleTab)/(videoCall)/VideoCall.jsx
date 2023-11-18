@@ -3,7 +3,7 @@ import Image from "next/image";
 const VideoCall = () => {
   return (
     <div
-      className="grid grid-rows-6 rounded-md"
+      className="grid md:grid-rows-7 rounded-md"
       style={{
         backgroundImage: 'url("/UserImg.png")',
         backgroundSize: "cover",
@@ -36,7 +36,7 @@ const VideoCall = () => {
         </div>
       </div>
       <div className=" row-span-1 mb-0 text-center">
-        <div className="bg-white mx-2 lg:mx-44 p-4 rounded-full flex flex-row justify-between">
+        <div className="bg-white mx-2 lg:mx-44 md:p-4 p-1 rounded-full flex flex-row justify-between">
           <button className=" rounded-full ">
             <Image
               height={30}

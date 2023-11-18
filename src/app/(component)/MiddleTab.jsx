@@ -16,7 +16,7 @@ const MiddleTab = () => {
               gender={"Male"}
             />
           </div>
-          <div className="grid row-span-4  rounded-md  mb-16">
+          <div className="grid row-span-3 md:row-span-4  rounded-md  md:mb-16">
             <VideoCall />
           </div>
         </div>
