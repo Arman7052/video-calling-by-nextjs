@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@zegocloud/zego-uikit-prebuilt": "^1.8.15",
+    "agora-react-uikit": "^1.2.0",
     "next": "^14.0.3",
     "react": "^18",
     "react-dom": "^18",
