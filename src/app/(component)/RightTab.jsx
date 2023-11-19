@@ -7,13 +7,15 @@ import MedicalRecord from "./(tabComponents)/(rightTab)/MedicalRecord";
 import NextVisit from "./(tabComponents)/(rightTab)/NextVisit";
 import ConsultationInfo from "./(tabComponents)/(rightTab)/ConsultationInfo";
 import Symptoms from "./(tabComponents)/(rightTab)/Symptoms";
+import { useRouter } from "next/navigation";
 
 const RightTab = () => {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (tabIndex) => {
     if (tabIndex === 4) {
-      window.open("/madication", "_target");
+      router.push("/madication");
     } else {
       setActiveTab(tabIndex);
     }
