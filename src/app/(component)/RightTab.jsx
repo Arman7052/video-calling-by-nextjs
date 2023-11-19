@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import SideTabsButton from "./(reUsableComponent)/SideTabsButton";
 import AdvicePage from "./(tabComponents)/(rightTab)/Advice";
