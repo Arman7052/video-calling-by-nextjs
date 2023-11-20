@@ -1,6 +1,11 @@
 import UserInfo from "./(reUsableComponent)/UserInfo";
-import VideoCall from "./(tabComponents)/(middleTab)/(videoCall)/VideoCall";
+// import VideoCall from "./(tabComponents)/(middleTab)/(videoCall)/VideoCall";
+import dynamic from "next/dynamic";
 
+const VideoCall = dynamic(
+  () => import("./(tabComponents)/(middleTab)/(videoCall)/VideoCall"),
+  { ssr: false }
+);
 const MiddleTab = () => {
   return (
     <div>
