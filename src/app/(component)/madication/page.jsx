@@ -8,7 +8,7 @@ import DiagnosisMedic from "../(prescription)/DiagnosisMedic";
 const page = () => {
   return (
     <Fragment>
-      <div className=" md:mx-[200px] p-10">
+      <div className=" md:mx-[350px] p-10">
         <div>
           <Image
             width={200}

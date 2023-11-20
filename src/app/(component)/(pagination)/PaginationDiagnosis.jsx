@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Diagnosis1 from "./Diagnosis1";
+
 import Diagnosis2 from "./Diagnosis2";
 import Diagnosis3 from "./Diagnosis3";
+import Diagnosis1 from "./Diagnosis1";
 
 const PaginationDiagnosis = () => {
   const router = useRouter();
