@@ -5,9 +5,9 @@ const VideoCall = () => {
 
   const rtcProps = {
     appId: "ba6ed3142add4b36aef222e952ca57b8",
-    channel: "doctors",
+    channel: "doctor",
     token:
-      "007eJxTYOg9Wf3Ds/yPBvOvLTs8fznfN2y7wyCaU5Ob3XnHl22VMq8CQ1KiWWqKsaGJUWJKikmSsVliapqRkVGqpalRcqKpeZKFI1tUakMgI4O4pTgjIwMEgvjsDCn5ySX5RcUMDACjOh8W",
+      "007eJxTYDh1tTouduWBG1lMJWk7JvL/a/Pgfbl64r7Y3VtvW/R/jDBUYEhKNEtNMTY0MUpMSTFJMjZLTE0zMjJKtTQ1Sk40NU+yMI6JTm0IZGTICPBkZWSAQBCfjSElP7kkv4iBAQAg8CFt",
   };
 
   const callbacks = {
